@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <style>
+        button {
+            display: inline-block;
+            background-color: #5ab5f6;
+            padding: 10px;
+            width: 450px;
+            color: #ffffff;
+            text-align: center;
+            border: 4px double #cccccc;
+            cursor: pointer;
+            margin: 5px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h2>Choose your user type</h2><br>
+        <div class="submit">
+            <button type="button"
+                onclick="window.location.href='../../student/html/student_signup.html'">student</button> <br><br>
+            <button type="button"
+                onclick="window.location.href='../../batch_advisor/html/batch_signup.html'">batch</button>
+            <br><br>
+            <button type="button"
+                onclick="window.location.href='../../course_instructor/html/course_login.html'">course</button>
+        </div>
+
+
+</body>
+
+</html>
