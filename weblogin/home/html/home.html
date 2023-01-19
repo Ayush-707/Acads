@@ -17,14 +17,10 @@
             text-align: center;
             border: 4px double #cccccc;
             cursor: pointer;
-            /* add this line */
             margin: 5px;
             -webkit-transition: all 0.5s;
-            /* add this line, chrome, safari, etc */
             -moz-transition: all 0.5s;
-            /* add this line, firefox */
             -o-transition: all 0.5s;
-            /* add this line, opera */
             transition: all 0.5s;
         }
 
@@ -38,9 +34,13 @@
     <div class="form">
         <h2>Choose your user type</h2><br>
         <div class="submit">
-            <button type="button">student</button> <br><br>
-            <button type="button">batch</button> <br><br>
-            <button type="button">course</button>
+            <button type="button"
+                onclick="window.location.href='../../student/html/student_signup.html'">student</button> <br><br>
+            <button type="button"
+                onclick="window.location.href='../../batch_advisor/html/batch_signup.html'">batch</button>
+            <br><br>
+            <button type="button"
+                onclick="window.location.href='../../course_instructor/html/course_login.html'">course</button>
         </div>
 
 
