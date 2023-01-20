@@ -3,32 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="../../styles/Instructor/course_login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../../styles/Instructor/course_login.css"
+    >
 </head>
 
 <body>
     <div class="form">
-        <h2>Login Page</h2>
-        <form action="course_otp.html" autocomplete="off">
+        <h2>Sign up</h2>
+
+        <form action="course_otp.html">
+
+            <div class="grid-details">
+                <div class="input">
+                    <label>First Name</label>
+                    <input type="text" name="fname" placeholder="First Name" required pattern="[a-zA-Z'-'\s]*">
+                </div>
+                <div class="input">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" placeholder="Last Name" required pattern="[a-zA-Z'-'\s]*">
+                </div>
+            </div>
             <div class="input">
                 <label>Email</label>
                 <input type="email" name="email" placeholder="Enter Your Email" required>
-           </div>  
-            
-           <div class = "grid-details">
-           <div class = "input">
-               <label>Password</label>
-               <input type ="password" name="pass" placeholder= "Password" required>
-           </div>
+            </div>
             <div class="submit">
-                <input type="submit" values="Signup Now" class="button">
+
+                <input type="submit" value="Send OTP" class="button" reqiured>
+
             </div>
         </form>
-        <div class="link">Not signed up? <a href="">Signup Now</a></div>
-    </div>
+
+
 </body>
 
 </html>
